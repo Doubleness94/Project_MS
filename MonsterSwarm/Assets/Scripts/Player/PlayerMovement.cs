@@ -2,26 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : LivingEntity
+public class PlayerMovement : MonoBehaviour
 {
     public float hAxis { get; private set; }
     public float vAxis { get; private set; }
-    public float moveSpeed;
     public bool isMove = false;
+    [SerializeField]
+    private bool isAtkRdy;
+    private float atkDelay = 0;
     private Rigidbody playerRigid;
     private Animator anim;
     public Vector3 moveVec;
+    public PlayerStatus status;
     
 
     private void Awake()
     {
         playerRigid = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        status = GetComponent<PlayerStatus>();
     }
 
     private void Update()
     {
-        if (dead)
+        if (status.dead)
         {
             hAxis = 0;
             vAxis = 0;
@@ -45,44 +49,32 @@ public class PlayerMovement : LivingEntity
     {
         Move();
         anim.SetBool("isMove", isMove);
+        BasicAttack();
     }
 
     private void Move()
     {
         moveVec = new Vector3(hAxis, 0, vAxis).normalized;
-        transform.position += moveVec * moveSpeed * Time.deltaTime;
+        transform.position += moveVec * status.moveSpeed * Time.deltaTime;
         transform.LookAt(transform.position + moveVec);
         
     }
-
-    protected override void OnEnable()
+    
+    private void BasicAttack()
     {
-        base.OnEnable();
-    }
-
-    public override void Die()
-    {
-        base.Die();
-    }
-
-    public override void RestoreHealth(float newHealth)
-    {
-        base.RestoreHealth(newHealth);
-    }
-
-    public override void OnDamage(float damage, Vector3 hitPoint, Vector3 hitNormal)
-    {
-        if (!dead)
+        atkDelay += Time.deltaTime;
+        isAtkRdy = status.atkRate < atkDelay;
+        if(isAtkRdy && !status.dead)
         {
-            //애니메이션, 사운드, 이펙트 등등
+            anim.SetTrigger("Attack");
+            atkDelay = 0;
         }
-        base.OnDamage(damage, hitPoint, hitNormal);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         //아이템, 경험치 습득
-        if (!dead)
+        if (!status.dead)
         {
 
         }
