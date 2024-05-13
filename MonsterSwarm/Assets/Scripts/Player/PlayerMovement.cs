@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -19,8 +20,8 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         playerRigid = GetComponent<Rigidbody>();
-        anim = GetComponent<Animator>();
-        status = GetComponent<PlayerStatus>();
+        anim = GetComponentInChildren<Animator>();
+        status = GetComponentInChildren<PlayerStatus>();
     }
 
     private void Update()
