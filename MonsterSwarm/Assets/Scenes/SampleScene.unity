@@ -802,8 +802,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1015420898}
-  - component: {fileID: 1015420899}
   - component: {fileID: 1015420900}
+  - component: {fileID: 1015420899}
+  - component: {fileID: 1015420901}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -842,6 +843,7 @@ MonoBehaviour:
   isMove: 0
   isAtkRdy: 0
   moveVec: {x: 0, y: 0, z: 0}
+  inputVec: {x: 0, y: 0, z: 0}
   status: {fileID: 0}
 --- !u!54 &1015420900
 Rigidbody:
@@ -857,8 +859,32 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!114 &1015420901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015420897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecd135cbeb75335488a24335fc2cc508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  moveSpeed: 10
+  atkRate: 2
+  hp: 0
+  maxExp: 0
+  exp: 0
+  level: 0
+  atk: 0
+  def: 0
+  dodge: 0
+  crc: 0
+  crd: 0
 --- !u!1 &1278414863
 GameObject:
   m_ObjectHideFlags: 0
@@ -4753,10 +4779,9 @@ GameObject:
   - component: {fileID: 2187651229564594187}
   - component: {fileID: 1861851757118414161}
   - component: {fileID: 2187651229564594191}
-  - component: {fileID: 2187651229564594188}
-  - component: {fileID: 2187651229564594190}
+  - component: {fileID: 2187651229564594192}
   m_Layer: 0
-  m_Name: Character
+  m_Name: Character_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5065,46 +5090,6 @@ Transform:
   m_Father: {fileID: 1015420898}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2187651229564594188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519905085140021937}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c385186d01debb64b8ad0afa41258e48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isMove: 0
-  isAtkRdy: 0
-  moveVec: {x: 0, y: 0, z: 0}
-  status: {fileID: 0}
---- !u!114 &2187651229564594190
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519905085140021937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecd135cbeb75335488a24335fc2cc508, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  moveSpeed: 10
-  atkRate: 2
-  hp: 0
-  maxExp: 0
-  exp: 0
-  level: 0
-  atk: 0
-  def: 0
-  dodge: 0
-  crc: 0
-  crd: 0
 --- !u!136 &2187651229564594191
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5119,6 +5104,21 @@ CapsuleCollider:
   m_Height: 1.39
   m_Direction: 1
   m_Center: {x: 0, y: 0.66, z: 0}
+--- !u!114 &2187651229564594192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519905085140021937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb6f05703b00bf440ac39063ca7005c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1015420899}
+  rotate: {x: 0, y: 0, z: 0}
+  rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!33 &2308764101285739424
 MeshFilter:
   m_ObjectHideFlags: 0

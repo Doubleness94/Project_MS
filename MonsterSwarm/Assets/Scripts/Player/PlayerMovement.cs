@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody playerRigid;
     private Animator anim;
     public Vector3 moveVec;
+    public Vector3 inputVec;
     public PlayerStatus status;
     
 
@@ -21,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerRigid = GetComponent<Rigidbody>();
         anim = GetComponentInChildren<Animator>();
-        status = GetComponentInChildren<PlayerStatus>();
+        status = GetComponent<PlayerStatus>();
     }
 
     private void Update()
@@ -55,9 +56,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        moveVec = new Vector3(hAxis, 0, vAxis).normalized;
-        transform.position += moveVec * status.moveSpeed * Time.deltaTime;
-        transform.LookAt(transform.position + moveVec);
+        inputVec = new Vector3(hAxis, 0, vAxis);
+        moveVec = Quaternion.Euler(0, 45, 0) * inputVec;
+        transform.position += moveVec.normalized * status.moveSpeed * Time.deltaTime;
+        //transform.LookAt(transform.position + moveVec);
         
     }
     
