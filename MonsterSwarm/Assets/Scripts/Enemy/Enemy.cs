@@ -16,7 +16,6 @@ public class Enemy : LivingEntity
     public float damage;
     public float timeBetAttack = 0.5f;//공격 간격
     public float speed;
-    public float angleSpeed = 120;
     private float lastAttackTime;
 
     private bool hasTarget
@@ -36,6 +35,7 @@ public class Enemy : LivingEntity
     {
         pathFinder = GetComponent<NavMeshAgent>();
         enemyAnimator = GetComponent<Animator>();
+        Setup(100f, 0f, 2f);
     }
 
     public void Setup(float newHealth, float newDamage, float newSpeed)
@@ -53,6 +53,7 @@ public class Enemy : LivingEntity
         pathFinder.enabled = true;
         pathFinder.isStopped = false;
         base.dead = false;
+        StartCoroutine(UpdatePath());
 
     }
 
@@ -63,7 +64,7 @@ public class Enemy : LivingEntity
 
     private void Update()
     {
-        
+        enemyAnimator.SetBool("HasTarget", hasTarget);
     }
 
     public IEnumerator UpdatePath()
@@ -77,18 +78,21 @@ public class Enemy : LivingEntity
             }
             else
             {
-                pathFinder.isStopped=true;
+                pathFinder.isStopped = true;
                 speed = 0;
-                angleSpeed = 0;
 
                 Collider[] colliders = Physics.OverlapSphere(transform.position, 20f, whatIsTarget);
 
+                //모든 콜라이더들을 순회하면서, 살아있는 LivingEntity 찾기
                 for(int i =  0; i < colliders.Length; i++)
                 {
+                    //콜라이더로부터 LivingEntity 컴포넌트 가져오기
                     LivingEntity livingEntity = colliders[i].GetComponent<LivingEntity>();
 
-                    if(livingEntity != null && !livingEntity.dead)
+                    // LivingEntity 컴포넌트가 존재하며, 해당 LivingEntity가 살아있다면,
+                    if (livingEntity != null && !livingEntity.dead)
                     {
+                        // 추적 대상을 해당 LivingEntity로 설정
                         targetEntity = livingEntity;
 
                         break;
