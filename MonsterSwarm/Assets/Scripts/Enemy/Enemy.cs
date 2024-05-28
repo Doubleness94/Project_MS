@@ -16,6 +16,7 @@ public class Enemy : LivingEntity
     public float damage;
     public float timeBetAttack = 0.5f;//공격 간격
     public float speed;
+    public float angleSpeed;
     private float lastAttackTime;
 
     private bool hasTarget
@@ -35,7 +36,6 @@ public class Enemy : LivingEntity
     {
         pathFinder = GetComponent<NavMeshAgent>();
         enemyAnimator = GetComponent<Animator>();
-        Setup(100f, 0f, 2f);
     }
 
     public void Setup(float newHealth, float newDamage, float newSpeed)
@@ -50,10 +50,13 @@ public class Enemy : LivingEntity
         damage = newDamage;
         pathFinder.speed = newSpeed;
         speed = newSpeed;
-        pathFinder.enabled = true;
-        pathFinder.isStopped = false;
+        angleSpeed = 120f;
         base.dead = false;
-        StartCoroutine(UpdatePath());
+        StartCoroutine(UpdateTarget());
+        //pathFinder.enabled = true;
+        //pathFinder.isStopped = false;
+        //StartCoroutine(UpdatePathNav());
+        //StartCoroutine(UpdatePath());
 
     }
 
@@ -65,9 +68,51 @@ public class Enemy : LivingEntity
     private void Update()
     {
         enemyAnimator.SetBool("HasTarget", hasTarget);
-    }
+        if (hasTarget)
+        {
+            Vector3 direction = targetEntity.transform.position - transform.position;
+            direction.Normalize();
+            direction.y = 0;
 
-    public IEnumerator UpdatePath()
+            //회전
+            transform.forward = Vector3.Lerp(transform.forward, direction, angleSpeed * Time.deltaTime);
+            //이동
+            transform.position += transform.forward * speed * Time.deltaTime;
+        }
+        else
+        {
+            speed = 0;
+            angleSpeed = 0;
+        }
+    }
+    public IEnumerator UpdateTarget()
+    {
+        while (!dead)
+        {
+            if (hasTarget)
+            {
+
+            }
+            else
+            {
+                Collider[] colliders = Physics.OverlapSphere(transform.position, 100f, whatIsTarget);
+
+                for(int i = 0; i < colliders.Length; i++)
+                {
+                    LivingEntity livingEntity = colliders[i].GetComponent<LivingEntity>();
+
+                    if(livingEntity != null && !livingEntity.dead)
+                    {
+                        targetEntity = livingEntity;
+                        break;
+                    }
+                }
+            }
+            yield return new WaitForSeconds(0.25f);
+        }
+    }
+    /*
+    public IEnumerator UpdatePathNav()
     {
         while (!dead)
         {
@@ -103,4 +148,5 @@ public class Enemy : LivingEntity
             yield return new WaitForSeconds(0.25f);
         }
     }
+    */
 }
