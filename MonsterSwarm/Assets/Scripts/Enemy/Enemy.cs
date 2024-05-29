@@ -8,16 +8,16 @@ public class Enemy : LivingEntity
     public LayerMask whatIsTarget; //추적 대상 레이어
 
     public LivingEntity targetEntity; //추적할 대상
-    public NavMeshAgent pathFinder; //경로계산 AI 에이전트
 
     private Animator enemyAnimator;
-    //private Renderer enemyRenderer;
+    private Rigidbody rigid;
 
     public float damage;
     public float timeBetAttack = 0.5f;//공격 간격
     public float speed;
     public float angleSpeed;
     private float lastAttackTime;
+
 
     private bool hasTarget
     {
@@ -34,8 +34,8 @@ public class Enemy : LivingEntity
 
     private void Awake()
     {
-        pathFinder = GetComponent<NavMeshAgent>();
         enemyAnimator = GetComponent<Animator>();
+        rigid = GetComponent<Rigidbody>();
     }
 
     public void Setup(float newHealth, float newDamage, float newSpeed)
@@ -48,21 +48,11 @@ public class Enemy : LivingEntity
         maxHealth = newHealth;
         health = newHealth;
         damage = newDamage;
-        pathFinder.speed = newSpeed;
         speed = newSpeed;
         angleSpeed = 120f;
         base.dead = false;
         StartCoroutine(UpdateTarget());
-        //pathFinder.enabled = true;
-        //pathFinder.isStopped = false;
-        //StartCoroutine(UpdatePathNav());
-        //StartCoroutine(UpdatePath());
 
-    }
-
-    private void Start()
-    {
-        
     }
 
     private void Update()
@@ -81,20 +71,20 @@ public class Enemy : LivingEntity
         }
         else
         {
+
             speed = 0;
             angleSpeed = 0;
+            rigid.velocity = Vector3.zero;
+            rigid.angularVelocity = Vector3.zero;
         }
     }
     public IEnumerator UpdateTarget()
     {
         while (!dead)
         {
-            if (hasTarget)
+            if(!hasTarget)
             {
-
-            }
-            else
-            {
+                
                 Collider[] colliders = Physics.OverlapSphere(transform.position, 100f, whatIsTarget);
 
                 for(int i = 0; i < colliders.Length; i++)
@@ -111,42 +101,45 @@ public class Enemy : LivingEntity
             yield return new WaitForSeconds(0.25f);
         }
     }
-    /*
-    public IEnumerator UpdatePathNav()
+
+    public override void OnDamage(float damage, Vector3 hitPoint, Vector3 hitNormal)
     {
-        while (!dead)
+        base.OnDamage(damage, hitPoint, hitNormal);
+    }
+
+    public override void Die()
+    {
+        base.Die();
+
+        Collider[] enemyColliders = GetComponents<Collider>();
+        for(int i = 0;i < enemyColliders.Length;i++)
         {
-            if (hasTarget)
+            enemyColliders[i].enabled = false;
+        }
+
+        speed = 0;
+        angleSpeed = 0;
+        enemyAnimator.SetBool("Die", dead);
+        new WaitForSeconds(1f);
+        gameObject.SetActive(false);
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(!dead && Time.time >= lastAttackTime + timeBetAttack)
+        {
+            LivingEntity attackTarget = other.GetComponent<LivingEntity>();
+
+            if(attackTarget != null && attackTarget == targetEntity)
             {
-                pathFinder.isStopped = false;
-                pathFinder.SetDestination(targetEntity.transform.position);
+                Debug.Log("몬스터의 공격");
+                lastAttackTime = Time.time;
+                Vector3 hitPoint = other.ClosestPoint(transform.position);
+                Vector3 hitNormal = transform.position - other.transform.position;
+                
+
+                attackTarget.OnDamage(damage, hitPoint, hitNormal);
             }
-            else
-            {
-                pathFinder.isStopped = true;
-                speed = 0;
-
-                Collider[] colliders = Physics.OverlapSphere(transform.position, 20f, whatIsTarget);
-
-                //모든 콜라이더들을 순회하면서, 살아있는 LivingEntity 찾기
-                for(int i =  0; i < colliders.Length; i++)
-                {
-                    //콜라이더로부터 LivingEntity 컴포넌트 가져오기
-                    LivingEntity livingEntity = colliders[i].GetComponent<LivingEntity>();
-
-                    // LivingEntity 컴포넌트가 존재하며, 해당 LivingEntity가 살아있다면,
-                    if (livingEntity != null && !livingEntity.dead)
-                    {
-                        // 추적 대상을 해당 LivingEntity로 설정
-                        targetEntity = livingEntity;
-
-                        break;
-                    }
-                }
-            }
-
-            yield return new WaitForSeconds(0.25f);
         }
     }
-    */
 }

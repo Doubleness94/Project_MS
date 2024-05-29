@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using UnityEngine;
 
 public class PlayerStatus : LivingEntity
@@ -16,8 +17,17 @@ public class PlayerStatus : LivingEntity
     public int dodge;
     public int crc; //critical chance
     public int crd; //critical damage
+    private Animator anim;
 
+    private void Awake()
+    {
+        anim = GetComponentInChildren<Animator>();
+    }
 
+    private void Update()
+    {
+        hp = health;
+    }
     protected override void OnEnable()
     {
         base.OnEnable();
@@ -35,6 +45,12 @@ public class PlayerStatus : LivingEntity
     public override void Die()
     {
         base.Die();
+        Collider[] colliders = GetComponents<Collider>();
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            colliders[i].enabled = false;
+        }
+        anim.SetTrigger("Die");
     }
 
     public override void RestoreHealth(float newHealth)
@@ -47,6 +63,7 @@ public class PlayerStatus : LivingEntity
         if (!dead)
         {
             //애니메이션, 사운드, 이펙트 등등
+            
         }
         base.OnDamage(damage, hitPoint, hitNormal);
     }

@@ -31,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
         {
             hAxis = 0;
             vAxis = 0;
+            playerRigid.velocity = Vector3.zero;
+            playerRigid.angularVelocity = Vector3.zero;
             return;
         }
 
@@ -58,9 +60,7 @@ public class PlayerMovement : MonoBehaviour
     {
         inputVec = new Vector3(hAxis, 0, vAxis);
         moveVec = Quaternion.Euler(0, 45, 0) * inputVec;
-        transform.position += moveVec.normalized * status.moveSpeed * Time.deltaTime;
-        //transform.LookAt(transform.position + moveVec);
-        
+        transform.position += moveVec.normalized * status.moveSpeed * Time.deltaTime;        
     }
     
     private void BasicAttack()
@@ -73,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
             atkDelay = 0;
         }
     }
+
 
     private void OnTriggerEnter(Collider other)
     {

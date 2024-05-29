@@ -12,8 +12,8 @@ public class EnemySpawner : MonoBehaviour
     float spawnDelay;
     float timer;
 
-    float maxX = 8;
-    float maxZ = 6;
+    float maxX = 12;
+    float maxZ = 9;
 
     public int enemyCount;
     public GameObject[] enemyPrefabs;
@@ -62,7 +62,7 @@ public class EnemySpawner : MonoBehaviour
         GameObject newEnemy = Get(0);
         newEnemy.transform.position = RandomPosition();
         float health = 100f;
-        float damage = 0f;
+        float damage = 5f;
         float speed = 5f;
         newEnemy.GetComponent<Enemy>().Setup(health,damage,speed);
         enemyCount++;
