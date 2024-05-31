@@ -1,0 +1,539 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.8f1 (b30333d56e81) revision 11731763'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'ko' Physical Memory: 8067 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/hub/Unity/Project_MS/MonsterSwarm
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54896
+Successfully changed project path to: D:/hub/Unity/Project_MS/MonsterSwarm
+D:/hub/Unity/Project_MS/MonsterSwarm
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 380.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.8f1 (b30333d56e81)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/hub/Unity/Project_MS/MonsterSwarm/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c8c)
+    Vendor:   NVIDIA
+    VRAM:     4019 MB
+    Driver:   31.0.15.2849
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.029300 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 162.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.183 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1184ms)
+		BeginReloadAssembly (251ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (751ms)
+			LoadAssemblies (246ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (145ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (496ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (103ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (163ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (127ms)
+				ProcessInitializeOnLoadMethodAttributes (102ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.057774 seconds.
+Android Extension - Scanning For ADB Devices 5782 ms
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\hub\Unity\Project_MS\MonsterSwarm\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\hub\Unity\Project_MS\MonsterSwarm\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 141.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.678 seconds
+Domain Reload Profiling:
+	ReloadAssembly (6679ms)
+		BeginReloadAssembly (198ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (5446ms)
+			LoadAssemblies (3882ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (522ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (101ms)
+			SetupLoadedEditorAssemblies (909ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (142ms)
+				BeforeProcessingInitializeOnLoad (170ms)
+				ProcessInitializeOnLoadAttributes (412ms)
+				ProcessInitializeOnLoadMethodAttributes (136ms)
+				AfterProcessingInitializeOnLoad (27ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (22ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5488 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 65 unused Assets / (2.0 MB). Loaded Objects now: 5931.
+Memory consumption went from 224.0 MB to 222.0 MB.
+Total: 7.424500 ms (FindLiveObjects: 0.725700 ms CreateObjectMapping: 0.916500 ms MarkObjects: 4.852600 ms  DeleteObjects: 0.928500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 78686.950798 seconds.
+  path: Assets/Vefects/Trails VFX URP/Scene/Scenes/VFX_Scene_Outdoors_Profiles/Camera Profile.asset
+  artifactKey: Guid(d7b4213fffdfdc14aacd054c29d6133d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/Scene/Scenes/VFX_Scene_Outdoors_Profiles/Camera Profile.asset using Guid(d7b4213fffdfdc14aacd054c29d6133d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4acdbb7f12019973baec6e89012f1fb3') in 0.099203 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.451238 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c58a40e964e18b779296e2981132791') in 0.011758 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.390164 seconds.
+  path: Assets/Vefects/Trails VFX URP/Scene/Scenes
+  artifactKey: Guid(507d8be37dcea494ea8e021866c5224e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/Scene/Scenes using Guid(507d8be37dcea494ea8e021866c5224e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afba7e449b7ec2d2e0092a8477c7ee2d') in 0.015672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.670261 seconds.
+  path: Assets/Vefects/Trails VFX URP/Scene/Scenes/VFX_Scene_Outdoors.unity
+  artifactKey: Guid(91e2cb515eadb3f45bb902a1d3910883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/Scene/Scenes/VFX_Scene_Outdoors.unity using Guid(91e2cb515eadb3f45bb902a1d3910883) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520bc744f52c42f2de6df4c8cf2ccfe7') in 0.014948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 64.345533 seconds.
+  path: Assets/Packs
+  artifactKey: Guid(26c718e1b44170b4da06d42d8370a091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs using Guid(26c718e1b44170b4da06d42d8370a091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fded02baf6987ede387923c91363fc5a') in 0.016734 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.735064 seconds.
+  path: Assets/Packs/New Universal Render Pipeline Asset.asset
+  artifactKey: Guid(9a3cf5f24919ac24683e3e3209af06a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/New Universal Render Pipeline Asset.asset using Guid(9a3cf5f24919ac24683e3e3209af06a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0450a14bec7d5a965c8c3bfd01b55523') in 0.088508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.436052 seconds.
+  path: Assets/Packs/URP.asset
+  artifactKey: Guid(d57bcb57e0629144ab20a41f3a51d663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/URP.asset using Guid(d57bcb57e0629144ab20a41f3a51d663) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd5cd67e2e545a666cc5ab10ab6018c4') in 0.063855 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 8.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 90 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (2.0 MB). Loaded Objects now: 5980.
+Memory consumption went from 111.0 MB to 109.0 MB.
+Total: 9.162700 ms (FindLiveObjects: 0.732000 ms CreateObjectMapping: 0.904800 ms MarkObjects: 5.773900 ms  DeleteObjects: 1.750500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 85.183144 seconds.
+  path: Assets/Packs/URP_Renderer.asset
+  artifactKey: Guid(b921d35a4deb52c43835e8034700b0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/URP_Renderer.asset using Guid(b921d35a4deb52c43835e8034700b0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb7e9bb2506fe58a49026c2f5188d285') in 0.015194 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 29.473362 seconds.
+  path: Assets/Vefects/Trails VFX URP
+  artifactKey: Guid(10a28174e3167be408b8fbe4c667f848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP using Guid(10a28174e3167be408b8fbe4c667f848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fc6ef30a66dfe882d43497b8402aaf1') in 0.014133 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.651131 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX
+  artifactKey: Guid(1f7e87ab1b3bf1541a97226219e3273a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX using Guid(1f7e87ab1b3bf1541a97226219e3273a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7665261a5139218a5547ed9abeee24a') in 0.012702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.772250 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Shaders
+  artifactKey: Guid(8a434155888d41a449e1d4923ee41995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Shaders using Guid(8a434155888d41a449e1d4923ee41995) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57689f1edd97839b11f84f89892a5d8c') in 0.013590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.239248 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Particles
+  artifactKey: Guid(4f59d408d1c85114db9830ab7148138e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Particles using Guid(4f59d408d1c85114db9830ab7148138e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cb5a60f6b1e877ef216a05ff72662c8') in 0.013334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.142419 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Materials
+  artifactKey: Guid(08e295ef83ee61d45a3fcd562f6efe24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Materials using Guid(08e295ef83ee61d45a3fcd562f6efe24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af453981410a68cb8bed5e3b6c409cd') in 0.014391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.038380 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Distortion_01.mat
+  artifactKey: Guid(e8814d0af8059dd48b0f6abda21d5896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Distortion_01.mat using Guid(e8814d0af8059dd48b0f6abda21d5896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1786c9c923ccb173761f5b00772664ee') in 0.699638 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Electric_01.mat
+  artifactKey: Guid(28b125ea515132044b10f9ce4856c123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Electric_01.mat using Guid(28b125ea515132044b10f9ce4856c123) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8742ddb866132912fdf2cc32bdff4d54') in 0.061753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Fire_02.mat
+  artifactKey: Guid(f0b8fb3ecbc2cb048825486e3d63f1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Fire_02.mat using Guid(f0b8fb3ecbc2cb048825486e3d63f1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a93afa938cbce8af8b774e0d0748f400') in 0.041131 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Sound.mat
+  artifactKey: Guid(80811086e76b6d943a17f4fd3e0b3708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Sound.mat using Guid(80811086e76b6d943a17f4fd3e0b3708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee64bac894d1520909d0aa7d8b054606') in 0.041619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Nature_02.mat
+  artifactKey: Guid(ccf4748f8fcb76842b8aed4ebcaffbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Nature_02.mat using Guid(ccf4748f8fcb76842b8aed4ebcaffbfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d7dcc91c88b8041dab78e14d5fb64fe') in 0.041048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Water_01.mat
+  artifactKey: Guid(c1eb2c55c7a0007498dedba8627fc122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Water_01.mat using Guid(c1eb2c55c7a0007498dedba8627fc122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c86cd6a3545909021392bb57693c00e5') in 0.042399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Cosmos_02.mat
+  artifactKey: Guid(c4a9898349834844e8f70246d5e33538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Cosmos_02.mat using Guid(c4a9898349834844e8f70246d5e33538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab6d78ed02ebdd7332976a228c00710') in 0.042797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Water_02.mat
+  artifactKey: Guid(0d20bbb949108214db3d7d56e0fa77d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Water_02.mat using Guid(0d20bbb949108214db3d7d56e0fa77d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1687131d4a22c1aee6f7ef590ff4eefe') in 0.039981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Ice_01.mat
+  artifactKey: Guid(1bb24205a20f8f54891fc083866b39f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Ice_01.mat using Guid(1bb24205a20f8f54891fc083866b39f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8de564c5b5f7361742b8c852f7e1e9cf') in 0.039983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Dark_02.mat
+  artifactKey: Guid(9a2e5fcb985bf2e4d9a5c45621ec2bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Materials/M_VFX_Trail_Dark_02.mat using Guid(9a2e5fcb985bf2e4d9a5c45621ec2bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b232a6f0408bf4d612768d60a46d97c3') in 0.040497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 53.334246 seconds.
+  path: Assets/Prefabs/Slime.prefab
+  artifactKey: Guid(5ad91b2470143ff43a159db9da8508a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Slime.prefab using Guid(5ad91b2470143ff43a159db9da8508a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130234e3d70aa046bcc1eda6dad933aa') in 0.550583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.886953 seconds.
+  path: Assets/Packs/Character
+  artifactKey: Guid(e37105f6ed85cb54291976c9ac5cc383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character using Guid(e37105f6ed85cb54291976c9ac5cc383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79606f61aa050d0b95a82e405778e2b8') in 0.013083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.984051 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo
+  artifactKey: Guid(88a58b11e968e7942ab8fa8d438ccdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo using Guid(88a58b11e968e7942ab8fa8d438ccdc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '550786346cb817f740a2a229a900c8eb') in 0.013240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.711122 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Material
+  artifactKey: Guid(ae5f1d2c5fae36640a4fb67668052369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Material using Guid(ae5f1d2c5fae36640a4fb67668052369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6ee3ea99027beede3f96d734701001') in 0.013717 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.023665 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Material/PBR_Default.mat
+  artifactKey: Guid(f323cced30244554986ee5e9f5dd8b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Material/PBR_Default.mat using Guid(f323cced30244554986ee5e9f5dd8b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a02e4af245267a764a7ea2e5f26ffe0e') in 0.046502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Material/Skybox_Mat.mat
+  artifactKey: Guid(353466c49cf019540bf2ac95815b7c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Material/Skybox_Mat.mat using Guid(353466c49cf019540bf2ac95815b7c1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9932ed21485e4849c275b6662faf3ec8') in 0.165254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.624426 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Mesh
+  artifactKey: Guid(a597685b29c02da42af8db48b57f3b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Mesh using Guid(a597685b29c02da42af8db48b57f3b4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12dde3c9a8e409622d48433e1c312236') in 0.013425 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.024251 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Mesh/ModularCharacterPBR.fbx
+  artifactKey: Guid(34b0895dfc863f742aa5075a4e691859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Mesh/ModularCharacterPBR.fbx using Guid(34b0895dfc863f742aa5075a4e691859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f3f82e6ed4f4670a47e93f5d10bc540') in 0.610515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Mesh/OHS03Polyart.fbx
+  artifactKey: Guid(3164d361d8955d14c996186ce47ba3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Mesh/OHS03Polyart.fbx using Guid(3164d361d8955d14c996186ce47ba3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c19caded48d10da18ca3a54cdc8686d9') in 0.096204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Mesh/OHS06PBR.fbx
+  artifactKey: Guid(8e583e9185af1be4e9dd6f501e6fe7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Mesh/OHS06PBR.fbx using Guid(8e583e9185af1be4e9dd6f501e6fe7d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c6204426b397a47bcc8166bc23c9673') in 3.749097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Mesh/Shield08Polyart.fbx
+  artifactKey: Guid(c987a0ed5f8902041b988ba78a977080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Mesh/Shield08Polyart.fbx using Guid(c987a0ed5f8902041b988ba78a977080) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e254a2f826b0cb06c59ffb8f200c3ea7') in 0.128791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Mesh/Shield05PBR.fbx
+  artifactKey: Guid(99054bc45d8ad7442b1e413b0e260ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Mesh/Shield05PBR.fbx using Guid(99054bc45d8ad7442b1e413b0e260ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7323819e9ecffeda4f33d3308af1e912') in 0.075443 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Mesh/OHS03PBR.fbx
+  artifactKey: Guid(de392f919a34e4e4c94a6e77ef08a22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Mesh/OHS03PBR.fbx using Guid(de392f919a34e4e4c94a6e77ef08a22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8732f0ca64dbaa23e75ba21ba082b405') in 0.044697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.782162 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Animation
+  artifactKey: Guid(ce9fc0549a119344c9f1e480f227ad31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Animation using Guid(ce9fc0549a119344c9f1e480f227ad31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7851d20d99ee3db1f5eb1b4c2ded4670') in 0.014710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.876440 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Material/PBR_Default.mat
+  artifactKey: Guid(f323cced30244554986ee5e9f5dd8b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Material/PBR_Default.mat using Guid(f323cced30244554986ee5e9f5dd8b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c853b2520def0a9e47cc6ee110a1d41') in 0.153543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Packs/Character/RPG Tiny Hero Duo/Material/Stage.mat
+  artifactKey: Guid(f2c23294678c47341aa7ffec8a34162a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packs/Character/RPG Tiny Hero Duo/Material/Stage.mat using Guid(f2c23294678c47341aa7ffec8a34162a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '327e49e97d39acbda56feef1decccead') in 0.026059 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.511259 seconds.
+  path: Assets/Vefects/Trails VFX URP/Scene
+  artifactKey: Guid(7d2ae1132c30b1240a6c908bfdb232da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/Scene using Guid(7d2ae1132c30b1240a6c908bfdb232da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8711d8b02e6e794e8a72288ef9393b2') in 0.014090 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015942 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\hub\Unity\Project_MS\MonsterSwarm\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\hub\Unity\Project_MS\MonsterSwarm\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  4.260 seconds
+Domain Reload Profiling:
+	ReloadAssembly (4260ms)
+		BeginReloadAssembly (269ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (15ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (74ms)
+		EndReloadAssembly (3797ms)
+			LoadAssemblies (289ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (730ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (2192ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (134ms)
+				ProcessInitializeOnLoadAttributes (1893ms)
+				ProcessInitializeOnLoadMethodAttributes (108ms)
+				AfterProcessingInitializeOnLoad (22ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (27ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 87.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5387 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (1.9 MB). Loaded Objects now: 6097.
+Memory consumption went from 248.5 MB to 246.6 MB.
+Total: 6.594500 ms (FindLiveObjects: 0.716300 ms CreateObjectMapping: 0.756300 ms MarkObjects: 4.138000 ms  DeleteObjects: 0.982300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 72.027575 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Particles/VFX_Trail_Dark.prefab
+  artifactKey: Guid(ae6bdf3417a5d6047a559654858dac31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Particles/VFX_Trail_Dark.prefab using Guid(ae6bdf3417a5d6047a559654858dac31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2950d7e39a2687bcbc06b929c3180335') in 0.340290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Particles/VFX_Trail_Fire.prefab
+  artifactKey: Guid(101a8868c1adc5b40bdaf7526f47b7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Particles/VFX_Trail_Fire.prefab using Guid(101a8868c1adc5b40bdaf7526f47b7b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25285f02418000f5a8ffcf1df3d1b3b1') in 0.060560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Particles/VFX_Trail_Sound.prefab
+  artifactKey: Guid(a92ebdf897fa283428c50a41fe4411a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Particles/VFX_Trail_Sound.prefab using Guid(a92ebdf897fa283428c50a41fe4411a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ac044abdbf89436545e242f45e457c') in 0.043899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Particles/VFX_Trail_Cosmos.prefab
+  artifactKey: Guid(f6bbcfa7e746d0340bd78dd22f35b3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Particles/VFX_Trail_Cosmos.prefab using Guid(f6bbcfa7e746d0340bd78dd22f35b3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f36125160aff1548151b24af9633a14') in 0.046726 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Vefects/Trails VFX URP/VFX/Particles/VFX_Trail_Nature.prefab
+  artifactKey: Guid(26169785b8e30c944a512729256a05cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/VFX/Particles/VFX_Trail_Nature.prefab using Guid(26169785b8e30c944a512729256a05cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f6a515e392731a2f3d4d530c0825c98') in 0.053381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Vefects/Trails VFX URP/Scene/Textures/Metrics_Grid_Normal.TGA
+  artifactKey: Guid(4f1502c89b49fa2419daab4477020e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Vefects/Trails VFX URP/Scene/Textures/Metrics_Grid_Normal.TGA using Guid(4f1502c89b49fa2419daab4477020e86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1440e3a6da8b80a022ffb51f08a7655') in 0.136359 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 36.657645 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8193726cff86800c54781cdc6d54904') in 0.006202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.324990 seconds.
+  path: Assets/New Terrain 1.asset
+  artifactKey: Guid(5750c70c23b4bf040aa0bd9e3baaef26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain 1.asset using Guid(5750c70c23b4bf040aa0bd9e3baaef26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7df9a83baf0a7ca2a85cc86d2bb6e37b') in 0.231854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(81a945617b46eba47afc118f039f44a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(81a945617b46eba47afc118f039f44a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2d696acdf203a84573c45be75523382') in 0.024412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(da0bee54a9513e0438615d2870631113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(da0bee54a9513e0438615d2870631113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63a03bb6cfdcd57a11b753866c69aaf4') in 0.028914 seconds 
