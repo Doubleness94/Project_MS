@@ -1197,7 +1197,7 @@ MonoBehaviour:
   maxExp: 0
   exp: 0
   level: 0
-  atk: 0
+  atk: 5
   def: 0
   dodge: 0
   crc: 0
@@ -1540,6 +1540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMov: {fileID: 0}
+  status: {fileID: 0}
 --- !u!4 &1569001709
 Transform:
   m_ObjectHideFlags: 0
@@ -2141,9 +2142,9 @@ GameObject:
   - component: {fileID: 4327428876191595694}
   - component: {fileID: 2011678480596076644}
   - component: {fileID: 4327428876191595695}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: OHS03
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

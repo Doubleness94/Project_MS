@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     private static GameManager m_instance; // 싱글톤이 할당될 static 변수
     public bool isGameover { get; private set; } // 게임 오버 상태
     public PlayerMovement playerMov;
-
+    public PlayerStatus status;
     private void Awake()
     {
         if (instance != this)
@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         playerMov = FindObjectOfType<PlayerMovement>();
+        status = FindObjectOfType<PlayerStatus>();
 
     }
 }
